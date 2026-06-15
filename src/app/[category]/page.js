@@ -162,9 +162,9 @@ export default async function CategoryPage({ params }) {
                 </div>
             </section>
 
-            <section className="home1-counter-section">
+            <section className="  home1-counter-section">
                 <div className="container">
-                    <div className="counter-wrap text-center">
+                    <div className="bg-surface-container-lowest counter-wrap text-center">
                         <div className="row gy-4">
                             <p>{category.content}</p>
                         </div>

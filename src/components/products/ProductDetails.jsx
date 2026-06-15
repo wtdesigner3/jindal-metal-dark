@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ProductDetails({ product, relatedProducts = [], category = "stainless-steel" }) {
     return (
-        <section className="project-details-page my-5 ">
+        <section className="project-details-page my-5 mb-0">
             <div className="container">
                 <div className="row g-lg-4 gy-5 mb-80">
 
@@ -42,8 +42,8 @@ export default function ProductDetails({ product, relatedProducts = [], category
                         <div className="project-details-sidebar blog-sidebar-area">
 
                             {/* Related Products */}
-                            <div className="single-widget mb-30">
-                                <h5 className="widget-title">
+                            <div className="single-widget mb-30 single-feature">
+                                <h5 className="widget-title border-0">
                                     Related Products
                                 </h5>
 
@@ -51,8 +51,9 @@ export default function ProductDetails({ product, relatedProducts = [], category
                                     {relatedProducts.map((item) => (
                                         <li key={item.slug}>
                                             <Link href={`/${category}/${item.slug}`}>
-                                                <span>
+                                                <span className="text-light gap-3">
                                                     <svg
+                                                     className="text-primary"
                                                         width="12"
                                                         height="12"
                                                         viewBox="0 0 12 12"
@@ -86,24 +87,30 @@ export default function ProductDetails({ product, relatedProducts = [], category
                                             Ready to <span>work with us?</span>
                                         </h2>
 
-                                        <Link
-                                            href="/contact"
-                                            className="primary-btn1 white-bg"
-                                        >
-                                            <span>Connect Today</span>
+                                                 <div className="btn-grp">
+            <Link
+              href="#" 
+              className="primary-btn1 text-primary "
+            >
+              <span className="text-primary">  Connect Today</span>
+              <span className="text-primary">  Connect Today</span>
 
-                                            <svg
-                                                className="arrow"
-                                                width="23"
-                                                height="23"
-                                                viewBox="0 0 23 23"
-                                            >
-                                                <g>
-                                                    <path d="M0.113861 0H22.9999V4.28425L4.32671 22.9997L0 18.7154L12.7524 6.08815L0.113861 6.20089V0Z" />
-                                                    <path d="M23 22.9996V8.56848L16.8516 14.6566V22.9996H23Z" />
-                                                </g>
-                                            </svg>
-                                        </Link>
+              <svg
+                className="arrow"
+                width="23"
+                height="23"
+                viewBox="0 0 23 23"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path d="M0.113861 0H22.9999V4.28425L4.32671 22.9997L0 18.7154L12.7524 6.08815L0.113861 6.20089V0Z" />
+                  <path d="M23 22.9996V8.56848L16.8516 14.6566V22.9996H23Z" />
+                </g>
+              </svg>
+            </Link>
+
+         
+          </div>
                                     </div>
                                 </div>
                             </div>

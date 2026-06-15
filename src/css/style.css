@@ -9744,7 +9744,10 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .home1-counter-section .counter-wrap {
   padding: 55px 60px 40px;
   border: 1px solid rgba(var(--black-color-opc), 0.1);
-  background-color: var(--white-color);
+     background: #1f1f21;
+    /* border: 1px solid #e2e8f00d; */
+    transition: all .3s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0 1px 2px #3c40434d, 0 1px 3px 1px #3c404326;
   border-radius: 20px;
 }
 
@@ -29398,7 +29401,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .blog-sidebar-area .single-widget {
   padding: 35px 30px;
   border: 1px solid rgba(var(--primary-color1-opc), 0.1);
-  background-color: rgb(250, 249, 249);
+  /* background-color: rgb(250, 249, 249); */
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -29461,7 +29464,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 }
 
 .blog-sidebar-area .single-widget .category-list li a span svg {
-  fill: rgba(var(--title-color-opc), 0.7);
+  fill:var(--primary-color1);
   transition: 0.5s;
 }
 
