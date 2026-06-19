@@ -13,7 +13,7 @@ hr{
 .testimonial-swiper .swiper-wrapper {
   align-items: stretch !important;
 }
-.testimonial-swiper .swiper-slide {
+.testimonial-swiper .swiper-slide { 
   display: flex !important;
   align-items: stretch !important;
   height: 100% !important;
